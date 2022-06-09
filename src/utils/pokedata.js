@@ -5,5 +5,4 @@ async function getPokemon(pokemon) {
     let response = await fetch(`${BASE_URL}/${pokemon}`);
     return await response.json();
 }
-
 module.exports = { getPokemon };

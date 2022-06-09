@@ -3,9 +3,7 @@ const fetch = require("node-fetch")
 module.exports = (client) => {
 
 const { Client, MessageEmbed } = require('discord.js');
-
 const { getPokemon } = require('./pokedata');
-
 client.on('message', async message => {
     if(message.author.bot) return;
     var thisguild = message.guild.id;
@@ -40,7 +38,5 @@ client.on('message', async message => {
             message.channel.send(`Pokemon ${pokemon} does not exist.`);
         }
     }
-
-
 });
 }
