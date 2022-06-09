@@ -1,2 +1,2 @@
-# Sudo
- dicord bot
+# Sudo - Discord Bot
+dynamic dicord bot
